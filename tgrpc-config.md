@@ -2,7 +2,7 @@
 
 以示例程序 [github.com/tgprc/ngrpc](https://github.com/tgprc/ngrpc)的 LangService为例，配置文件如下：
 
-```
+```toml
 [Language]
   exced = true
   log_level = "debug"
@@ -60,4 +60,3 @@
  - invokes.resp.cost 方法预估最大耗时，超时会给出错误提示。
 
  - invokes.resp.json 参考 [verify](verify.md)
- 

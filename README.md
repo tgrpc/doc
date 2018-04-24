@@ -1,8 +1,12 @@
 grpc 自动化测试
 ==============
 
+## 1. run server
 
-## tgrpc
+开启gRpc服务，参考[github.com/tgrpc/ngrpc](https://github.com/tgrpc/ngrpc)
+
+
+## 2. tgrpc
 
 ```
 go get github.com/tgrpc/tgrpc/tg ## get tgrpc tool

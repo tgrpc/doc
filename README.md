@@ -17,6 +17,8 @@ tg -c tgrpc.toml ## run tgrpc
 
 [resp的验证规则](verify.md)
 
+[reinvoke规则](reinvoke.md)
+
 ### prototool
 
 [prototool 示例](example.md)

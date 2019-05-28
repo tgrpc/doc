@@ -11,6 +11,8 @@ log_level = "debug"
   proto_base_path = "$GOPATH/src/github.com/tgrpc/ngrpc"
   include_imports = "helloworld/lang.proto"
   keepalive = "100s"
+  data = '@file1'
+  datas = ['@file1',"@file2"]
 
 [[invokes]]
 service = "lang"
@@ -50,6 +52,14 @@ n = 1
  - tgrpc.proto_base_path proto文件位置
 
  - tgrpc.include_imports 当前要执行的服务proto文件
+
+ - tgrpc.raw_descs pb.go的文件描述 [试验中]
+
+ - tgrpc.keepalive 调用grpc服务，client端的alive时长
+
+ - tgrpc.data 调用grpc服务数据部分参数，可以使用$range,$slice,$step等函数；支持@filename, 直接读取文件内容
+
+ - tgrpc.datas 数组版tgrpc.data，可替代tgrpc.data
 
  - invokes.service 所调的服务别名
 
